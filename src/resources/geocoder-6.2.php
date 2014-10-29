@@ -12,8 +12,8 @@ return [
     'apiVersion' => '6.2',
     'operations' => [
         // Elevation - Aster Global Digital Elevation Model
-        // Info: http://www.geonames.org/export/web-services.html#astergdem
-        // Expected Results: view-source:http://api.geonames.org/astergdemJSON?lat=50.01&lng=10.2&username=demo
+        // Info: https://developer.here.com/rest-apis/documentation/geocoder/topics/overview.html
+        // Expected Results: view-source: http://geocoder.cit.api.here.com/6.2/geocode.json?app_id=E9hgIZ5YJ8I7FribD2yE&app_code=SNbNZHN6TSSO8nxqUOXmIw&gen=6&houseNumber=50&street=Kienten+Str.&postalcode=72458&city=Albstadt
         '__auth' => [
             'httpMethod' => 'GET',
             'responseModel' => 'default',
@@ -31,8 +31,8 @@ return [
             ]
         ],
         // Returns the children (admin divisions and populated places) for a given geonameId
-        // Info: http://www.geonames.org/export/place-hierarchy.html#children
-        // Expected Results: view-source:http://api.geonames.org/children?geonameId=3175395&username=demo
+        // Info: https://developer.here.com/rest-apis/documentation/geocoder/topics/resource-geocode.html
+        // Expected Results: view-source: http://geocoder.cit.api.here.com/6.2/geocode.json?app_id=E9hgIZ5YJ8I7FribD2yE&app_code=SNbNZHN6TSSO8nxqUOXmIw&gen=6&houseNumber=50&street=Kienten+Str.&postalcode=72458&city=Albstadt
         'geocode' => [
             'extends' => '__auth',
             'httpMethod' => 'GET',

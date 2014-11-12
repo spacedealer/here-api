@@ -26,7 +26,7 @@ class GeoCoderTest extends PHPUnit_Framework_TestCase
     {
         $client = new spacedealer\here\api\GeoCoder($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
 
-        /** @var \spacedealer\here\api\GeoCoder $response */
+        /** @var \spacedealer\here\api\GeoCoderResponse $response */
         $response = $client->$command($params);
         $this->assertTrue($response->isOk());
     }

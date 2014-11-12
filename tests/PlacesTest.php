@@ -25,7 +25,7 @@ class PlacesTest extends PHPUnit_Framework_TestCase
     {
         $client = new spacedealer\here\api\Places($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
 
-        /** @var \spacedealer\here\api\GeoCoder $response */
+        /** @var \spacedealer\here\api\PlacesResponse $response */
         $response = $client->$command($params);
         $this->assertTrue($response->isOk());
     }

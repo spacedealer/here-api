@@ -3,8 +3,8 @@
 /**
  * PlacesTest.php file.
  *
- * @author Dirk Adler <adler@spacedealer.de>
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
+ * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
@@ -23,9 +23,9 @@ class PlacesTest extends PHPUnit_Framework_TestCase
      */
     public function testCommands($command, $params)
     {
-        $client = new spacedealer\here\api\Places($this->appId, $this->appCode, $this->apiVersion, $this->baseUrl);
+        $client = new spacedealer\here\api\Places($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
 
-        /** @var \spacedealer\here\api\Response $response */
+        /** @var \spacedealer\here\api\GeoCoder $response */
         $response = $client->$command($params);
         $this->assertTrue($response->isOk());
     }

@@ -1,13 +1,14 @@
 <?php
 
 /**
- * ResponsePlacesTest.php file.
+ * PlacesResponseTest.php file.
  *
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
+ * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
-class ResponsePlacesTest extends PHPUnit_Framework_TestCase
+class PlacesResponseTest extends PHPUnit_Framework_TestCase
 {
     /**
      * Test for correct status places response handling
@@ -106,7 +107,7 @@ class ResponsePlacesTest extends PHPUnit_Framework_TestCase
 //        $data = json_decode('{"name":"Maitén","placeId":"032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b","view":"http://here.com/p/s-Yz1ob3RlbDtpZD0wMzJqeDdwcy1lZjliMzJjZmMxMmYwYTQwNmM5ZDBhYjg5NmU0ZmM2YjtsYXQ9LTU0LjgxNDY1O2xvbj0tNjguMzI1MDM7bj1NYWl0JUMzJUE5bjtubGF0PS01NC44MTQ2NTtubG9uPS02OC4zMjUwMztwaD0lMkI1NDI5MDE0MjI3MzM7aD0zYzAxNTc","alternativeNames":[{"name":"Hotel Maiten","language":"es","chaosMandrillField":"we reserve the right to add new fields at any time"}],"location":{"position":[-54.81465,-68.32503],"address":{"text":"12 de Octubre 140<br/>9410 Ushuaia<br/>Argentinien","house":"140","street":"12 de Octubre","postalCode":"9410","city":"Ushuaia","state":"Tierra del Fuego","country":"Argentinien","countryCode":"ARG"},"access":[{"position":[-54.81465,-68.32503],"accessType":"road"}]},"contacts":{"phone":[{"value":"+542901422733","label":"Telefon"}]},"categories":[{"id":"hotel","title":"Hotel","href":"http://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:category","system":"places","icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon"}],"icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon","ratings":{"average":0.0,"count":0},"media":{"images":{"available":0,"create":{"title":"Bild hochladen","href":"https://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/media/images?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:image","accept":["urn:nlp-types:image-post"],"method":"POST"},"items":[],"chaosBaboonField":"we reserve the right to add new fields at any time"},"reviews":{"available":0,"create":{"title":"Rezension hinzufügen","href":"https://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/media/reviews?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:review","accept":["urn:nlp-types:review-post"],"method":"POST"},"items":[],"chaosTamarinField":"we reserve the right to add new fields at any time"},"ratings":{"available":0,"create":{"title":"Diesen Ort bewerten","href":"https://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/media/ratings?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:rating","accept":["urn:nlp-types:rating-post"],"method":"POST"},"items":[]},"chaosTamarinField":"we reserve the right to add new fields at any time"},"related":{"recommended":{"title":"In der Nähe","href":"http://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/related/recommended;context=Zmxvdy1pZD0yNzQxMmZmOC1mNjI5LTU5NDItYTM0Mi1iNzczNDBlMzAxYzRfMTQxNDU3NzQ4ODc1Ml8wXzI5NDU?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:search-results","chaosOrangutanField":"we reserve the right to add new fields at any time"},"public-transport":{"title":"Öffentliche Verkehrsmittel in der Nähe","href":"http://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/related/public-transport;context=Zmxvdy1pZD0yNzQxMmZmOC1mNjI5LTU5NDItYTM0Mi1iNzczNDBlMzAxYzRfMTQxNDU3NzQ4ODc1Ml8wXzI5NDU?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:search-results"},"chaos":{"title":"Future Extension: Your application is prepared for new related links with known media types","href":"http://places.cit.api.here.com/places/v1/places/007abcde-abcdef0123456789abcdef9876543210;context=Zmxvdy1pZD04Njk0NGY3YS0yY2FhLTU5MzAtOGIwNC1lMzU3NzFlMmU0OGRfMTQxNDUxMjk3OTAyMF8wXzg3NTE?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:place"},"another-chaos":{"title":"Chaos Monkey: Your application should ignore new related links with unknown media types","href":"http://places.cit.api.here.com/places/v1/places/007abcde-abcdef0123456789abcdef9876543210;context=Zmxvdy1pZD0zYjg1NzU2MS0wNWIyLTUyZWItOTg4OS02OWQ4YTk0YjQ4NTJfMTQxNDUxMjk3OTE3Nl8wXzY0OA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:chaos"}},"report":{"title":"Diesen Ort melden","href":"https://places.cit.api.here.com/places/v1/report/place/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg","type":"urn:nlp-types:report-options"}}', true);
 //        var_export($data);
 
-        $response = new \spacedealer\here\api\ResponsePlaces($data);
+        $response = new \spacedealer\here\api\PlacesResponse($data);
         $getResults = $response->getPlacesResult();
         $this->assertEquals($expectedData, $getResults);
 
@@ -140,7 +141,7 @@ class ResponsePlacesTest extends PHPUnit_Framework_TestCase
                 ],
         ];
 
-        $response = new \spacedealer\here\api\ResponsePlaces($data);
+        $response = new \spacedealer\here\api\PlacesResponse($data);
         $getResults = $response->getResultCount($data['suggestions']);
         $this->assertGreaterThan(0, $getResults);
     }
@@ -152,7 +153,7 @@ class ResponsePlacesTest extends PHPUnit_Framework_TestCase
             'status' => 401,
             'message' => 'Invalid app_id app_code combination',
         ];
-        $response = new \spacedealer\here\api\ResponsePlaces($data);
+        $response = new \spacedealer\here\api\PlacesResponse($data);
         $this->assertTrue($response->getException());
     }
 
@@ -161,7 +162,7 @@ class ResponsePlacesTest extends PHPUnit_Framework_TestCase
      */
     public function testHasResult($data)
     {
-        $response = new \spacedealer\here\api\ResponsePlaces($data);
+        $response = new \spacedealer\here\api\PlacesResponse($data);
         $getResults = $response->getResultCount($data['items']);
         $this->assertGreaterThan(0, $getResults);
     }
@@ -173,7 +174,7 @@ class ResponsePlacesTest extends PHPUnit_Framework_TestCase
     public function dataProviderExceptionalError()
     {
 
-        return  [
+        return [
             [
                 'status' => 401,
                 'message' => 'Invalid app_id app_code combination',
@@ -184,6 +185,7 @@ class ResponsePlacesTest extends PHPUnit_Framework_TestCase
             ]
         ];
     }
+
     /**
      * @todo add more test data
      * @return array

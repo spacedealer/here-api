@@ -2,13 +2,14 @@
 /**
  * places-v1.php file.
  *
+ * @author Trung Nguyen <t.nguyen@spacedealer.de>
  * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
- * @todo finish description
  */
 return [
-    'baseUrl' => 'http://places.api.here.com/places/v1/',
+    'baseUrl' => 'https://places.api.here.com/places/v1/',
+    'baseDemoUrl' => 'https://places.cit.api.here.com/places/v1/',
     'apiVersion' => 'v1',
     'operations' => [
         // Elevation - Aster Global Digital Elevation Model

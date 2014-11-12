@@ -1,6 +1,6 @@
 {
 	"name": "spacedealer/here-api",
-	"description": "Guzzle based here.com REST api client",
+	"description": "Guzzle 4 based here.com REST api clients",
 	"authors": [
 		{
 			"name": "Dirk Adler",

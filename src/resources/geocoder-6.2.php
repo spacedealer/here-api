@@ -2,13 +2,14 @@
 /**
  * config.php file.
  *
+ * @author Trung Nguyen <t.nguyen@spacedealer.de>
  * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
- * @todo finish description
  */
 return [
-    'baseUrl' => 'http://geocoder.api.here.com/6.2/',
+    'baseUrl' => 'https://geocoder.api.here.com/6.2/',
+    'baseDemoUrl' => 'https://geocoder.cit.api.here.com/6.2/',
     'apiVersion' => '6.2',
     'operations' => [
         // Elevation - Aster Global Digital Elevation Model

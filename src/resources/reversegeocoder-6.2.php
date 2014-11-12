@@ -2,14 +2,14 @@
 /**
  * reversegeocoder.php file.
  *
- * @author Dirk Adler <adler@spacedealer.de>
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
+ * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
- * @todo finish description
  */
 return [
-    'baseUrl' => 'http://reverse.geocoder.api.here.com/6.2/',
+    'baseUrl' => 'https://reverse.geocoder.api.here.com/6.2/',
+    'baseDemoUrl' => 'https://reverse.geocoder.cit.api.here.com/6.2/',
     'apiVersion' => '6.2',
     'operations' => [
         // Elevation - Aster Global Digital Elevation Model

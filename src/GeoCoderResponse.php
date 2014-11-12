@@ -1,8 +1,9 @@
 <?php
 /**
- * Response.php file.
+ * GeoCoderResponse.php file.
  *
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
+ * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
@@ -10,7 +11,7 @@
 namespace spacedealer\here\api;
 
 
-class Response extends \GuzzleHttp\Command\Model
+class GeoCoderResponse extends \GuzzleHttp\Command\Model
 {
     /**
      * @var bool
@@ -22,8 +23,8 @@ class Response extends \GuzzleHttp\Command\Model
      */
     public function getMetaInfo()
     {
-        if (isset($this->data['Response']['MetaInfo'])) {
-            return $this->data['Response']['MetaInfo'];
+        if (isset($this->data['GeoCoderResponse']['MetaInfo'])) {
+            return $this->data['GeoCoderResponse']['MetaInfo'];
         }
 
         return null;
@@ -34,8 +35,8 @@ class Response extends \GuzzleHttp\Command\Model
      */
     public function getResult()
     {
-        if (isset($this->data['Response']['View'][0]['Result'])) {
-            return $this->data['Response']['View'][0]['Result'];
+        if (isset($this->data['GeoCoderResponse']['View'][0]['Result'])) {
+            return $this->data['GeoCoderResponse']['View'][0]['Result'];
         }
 
         return null;

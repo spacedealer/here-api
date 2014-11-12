@@ -1,13 +1,14 @@
 <?php
 
 /**
- * ResponseGeoCoderTest.php file.
+ * GeoCoderResponseTest.php file.
  *
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
+ * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
-class ResponseGeoCoderTest extends PHPUnit_Framework_TestCase
+class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
 {
     /**
      * Test for correct status response handling
@@ -15,7 +16,7 @@ class ResponseGeoCoderTest extends PHPUnit_Framework_TestCase
     public function testEmptyResult()
     {
         $data = [
-            'Response' =>
+            'GeoCoderResponse' =>
                 [
                     'MetaInfo' =>
                         [
@@ -25,10 +26,10 @@ class ResponseGeoCoderTest extends PHPUnit_Framework_TestCase
                 ],
         ];
 
-//        $data = json_decode('{"Response":{"MetaInfo":{"Timestamp":"2014-10-22T15:03:15.853+0000"},"View":[]}}',true);
+//        $data = json_decode('{"GeoCoderResponse":{"MetaInfo":{"Timestamp":"2014-10-22T15:03:15.853+0000"},"View":[]}}',true);
 //        var_dump($data);
 
-        $response = new \spacedealer\here\api\Response($data);
+        $response = new \spacedealer\here\api\GeoCoderResponse($data);
         $metaInfo = $response->getMetaInfo();
         $this->assertEquals(['Timestamp' => '2014-10-22T12:23:11.006+0000'], $metaInfo);
 
@@ -47,7 +48,7 @@ class ResponseGeoCoderTest extends PHPUnit_Framework_TestCase
             'type' => 'ApplicationError',
             'subtype' => 'InvalidInputData',
         ];
-        $response = new \spacedealer\here\api\Response($data);
+        $response = new \spacedealer\here\api\GeoCoderResponse($data);
 
         $this->assertTrue($response->getException());
     }
@@ -55,7 +56,7 @@ class ResponseGeoCoderTest extends PHPUnit_Framework_TestCase
     public function testHasResult()
     {
         $data = [
-            'Response' =>
+            'GeoCoderResponse' =>
                 [
                     'MetaInfo' =>
                         [
@@ -222,8 +223,8 @@ class ResponseGeoCoderTest extends PHPUnit_Framework_TestCase
                 ],
         ];
 
-        $response = new \spacedealer\here\api\Response($data);
-        $this->assertEquals( ['Timestamp' => '2014-10-22T09:51:07.327+0000'], $response->getMetaInfo());
-        $this->assertEquals($resultExpected,$response->getResult());
+        $response = new \spacedealer\here\api\GeoCoderResponse($data);
+        $this->assertEquals(['Timestamp' => '2014-10-22T09:51:07.327+0000'], $response->getMetaInfo());
+        $this->assertEquals($resultExpected, $response->getResult());
     }
 }

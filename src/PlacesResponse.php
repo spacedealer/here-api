@@ -1,8 +1,9 @@
 <?php
 /**
- * ResponsePlaces.php file.
+ * PlacesResponse.php file.
  *
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
+ * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
@@ -10,7 +11,7 @@
 namespace spacedealer\here\api;
 
 
-class ResponsePlaces extends \GuzzleHttp\Command\Model
+class PlacesResponse extends \GuzzleHttp\Command\Model
 {
     /**
      * @var bool
@@ -28,17 +29,18 @@ class ResponsePlaces extends \GuzzleHttp\Command\Model
         return null;
     }
 
-    public function getResultCount($array=null)
+    public function getResultCount($array = null)
     {
         return count($array);
     }
+
     /**
      * @return null|array
      */
     public function getResult()
     {
-        if (isset($this->data['Response']['View'][0]['Result'])) {
-            return $this->data['Response']['View'][0]['Result'];
+        if (isset($this->data['GeoCoderResponse']['View'][0]['Result'])) {
+            return $this->data['GeoCoderResponse']['View'][0]['Result'];
         }
 
         return null;
@@ -47,7 +49,7 @@ class ResponsePlaces extends \GuzzleHttp\Command\Model
     public function getException()
     {
 
-        if (isset($this->data['status']) && in_array($this->data['status'], array(400,401))) {
+        if (isset($this->data['status']) && in_array($this->data['status'], array(400, 401))) {
             return true;
         }
         return null;

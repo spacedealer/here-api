@@ -39,8 +39,8 @@ class PlacesResponse extends \GuzzleHttp\Command\Model
      */
     public function getResult()
     {
-        if (isset($this->data['GeoCoderResponse']['View'][0]['Result'])) {
-            return $this->data['GeoCoderResponse']['View'][0]['Result'];
+        if (isset($this->data['Response']['View'][0]['Result'])) {
+            return $this->data['Response']['View'][0]['Result'];
         }
 
         return null;

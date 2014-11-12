@@ -23,8 +23,8 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
      */
     public function getMetaInfo()
     {
-        if (isset($this->data['GeoCoderResponse']['MetaInfo'])) {
-            return $this->data['GeoCoderResponse']['MetaInfo'];
+        if (isset($this->data['Response']['MetaInfo'])) {
+            return $this->data['Response']['MetaInfo'];
         }
 
         return null;
@@ -35,8 +35,8 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
      */
     public function getResult()
     {
-        if (isset($this->data['GeoCoderResponse']['View'][0]['Result'])) {
-            return $this->data['GeoCoderResponse']['View'][0]['Result'];
+        if (isset($this->data['Response']['View'][0]['Result'])) {
+            return $this->data['Response']['View'][0]['Result'];
         }
 
         return null;

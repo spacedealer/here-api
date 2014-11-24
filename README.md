@@ -5,6 +5,8 @@ Here.com REST api client PHP library
 
 TBD
 
+[![Build Status](https://travis-ci.org/spacedealer/here-api.svg?branch=master)](https://travis-ci.org/spacedealer/here-api)
+[![Dependency Status](https://www.versioneye.com/user/projects/547335848101065acc000ac4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/547335848101065acc000ac4)
 
 Requirements
 ------------

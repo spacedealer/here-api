@@ -44,7 +44,6 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
 
     public function getException()
     {
-
         if (isset($this->data['type']) && strpos($this->data['type'], 'Error')) {
             return true;
         }

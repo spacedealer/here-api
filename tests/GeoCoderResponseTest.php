@@ -16,7 +16,7 @@ class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
     public function testEmptyResult()
     {
         $data = [
-            'GeoCoderResponse' =>
+            'Response' =>
                 [
                     'MetaInfo' =>
                         [
@@ -25,9 +25,6 @@ class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
                     'View' => [],
                 ],
         ];
-
-//        $data = json_decode('{"GeoCoderResponse":{"MetaInfo":{"Timestamp":"2014-10-22T15:03:15.853+0000"},"View":[]}}',true);
-//        var_dump($data);
 
         $response = new \spacedealer\here\api\GeoCoderResponse($data);
         $metaInfo = $response->getMetaInfo();
@@ -56,7 +53,7 @@ class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
     public function testHasResult()
     {
         $data = [
-            'GeoCoderResponse' =>
+            'Response' =>
                 [
                     'MetaInfo' =>
                         [

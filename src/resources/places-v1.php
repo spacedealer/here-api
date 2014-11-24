@@ -236,20 +236,64 @@ return [
                 ],
             ]
         ],
-        // Returns the place categories available for a given location
+        // Returns the place or cuisines categories available for a given location
         // Info: https://developer.here.com/rest-apis/documentation/places/topics_api/resource-place-categories.html
         // Expected Results: view-source: http://places.cit.api.here.com/places/v1/categories/places?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg&at=52.50449,13.39091&pretty
-        'places' => [
+        'categories' => [
             'extends' => '__auth',
             'httpMethod' => 'GET',
-            'uri' => 'categories/places',
+            'uri' => 'categories/{type}',
             'parameters' => [
+                'type' => [
+                    'type' => 'string',
+                    'location' => 'uri',
+                    'default' => 'places',
+                    'required' => true
+                ],
                 'at' => [
                     'type' => 'string',
                     'location' => 'query',
                     'required' => true
                 ],
                 'in' => [
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+            ]
+        ],
+        // Retrieves a list tiles base URLs for the given criteria
+        // Info: http://places.cit.api.here.com/places/static/doc/internal/#topics/resource-tiles.html
+        // Expected Results: view-source: http://places.cit.api.here.com/places/v1/tiles?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg
+        'tiles' => [
+            'extends' => '__auth',
+            'httpMethod' => 'GET',
+            'uri' => 'suggest',
+            'parameters' => [
+                'cat' => [
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'tf' => [
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'size' => [
+                    'type' => 'integer',
+                    'location' => 'query',
+                ],
+                'teasers' => [
+                    'type' => 'integer',
+                    'location' => 'query',
+                ],
+                'image_dimensions' => [
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'show_refs' => [
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'cs' => [
                     'type' => 'string',
                     'location' => 'query',
                 ],

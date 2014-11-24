@@ -79,8 +79,15 @@ class PlacesTest extends PHPUnit_Framework_TestCase
                 ]
             ],
             [
-                'places',
+                'categories',
                 [
+                    'at' => '48.2111588,9.0009298',
+                ]
+            ],
+            [
+                'categories',
+                [
+                    'type' => 'cuisines',
                     'at' => '48.2111588,9.0009298',
                 ]
             ],

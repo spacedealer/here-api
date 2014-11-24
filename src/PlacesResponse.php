@@ -17,42 +17,78 @@ class PlacesResponse extends \GuzzleHttp\Command\Model
      * @var bool
      */
     protected $ok = true;
+    protected $status = null;
+    protected $message = null;
 
-    /**
-     * @return null|array
-     */
-    public function getPlacesResult()
+    public function __construct(array $data)
     {
-        if (isset($this->data['items'])) {
-            return $this->data['items'];
+
+        // error responses hold status && message properties
+        if (isset($data['status']) && isset($data['message'])) {
+            $this->ok = false;
+
+            $this->status = $data['status'];
+            unset($data['status']);
+
+            $this->message = $data['message'];
+            unset($data['message']);
         }
-        return null;
-    }
 
-    public function getResultCount($array = null)
-    {
-        return count($array);
+        parent::__construct($data);
     }
 
     /**
+     * @return int
+     */
+    public function getResultCount()
+    {
+        $result = $this->getResult();
+        return $result ? count($result) : 0;
+    }
+
+    /**
+     * Supported result types: search items, suggestions, lookup, categories or tiles
+     *
      * @return null|array
      */
     public function getResult()
     {
-        if (isset($this->data['Response']['View'][0]['Result'])) {
-            return $this->data['Response']['View'][0]['Result'];
+        if (isset($this->data['results']['items'])) {
+            return $this->data['results']['items'];
+        } else if (isset($this->data['suggestions'])) {
+            return $this->data['suggestions'];
+        } else if (isset($this->data['href'])) {
+            return $this->data['href'];
+        } else if (isset($this->data['items'])) {
+            return $this->data['items'];
+        } else if (isset($this->data['tiles'])) {
+            return $this->data['tiles'];
         }
 
         return null;
     }
 
-    public function getException()
+    /**
+     * Status message
+     *
+     * @return null|string
+     */
+    public function getMessage()
     {
+        return $this->message;
+    }
 
-        if (isset($this->data['status']) && in_array($this->data['status'], array(400, 401))) {
-            return true;
-        }
-        return null;
+    /**
+     * Status code of message.
+     *
+     * Supported status codes:
+     * https://developer.here.com/rest-apis/documentation/places/topics/http-status-codes.html
+     *
+     * @return null|int
+     */
+    public function getStatus()
+    {
+        $this->status;
     }
 
     /**

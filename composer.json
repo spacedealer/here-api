@@ -1,6 +1,19 @@
 {
 	"name": "spacedealer/here-api",
-	"description": "Guzzle 4 based here.com REST api clients",
+	"description": "Here.com REST api client library based on guzzle 4",
+	"keywords": [
+		"here.com",
+		"guzzle",
+		"REST",
+		"Api",
+		"client"
+	],
+	"homepage": "https://bitbucket.org/spacedealer/here-api",
+	"license": "BSD-3-Clause",
+	"support": {
+		"issues": "https://bitbucket.org/spacedealer/here-api/issues?status=new&status=open",
+		"source": "https://bitbucket.org/spacedealer/here-api"
+	},
 	"authors": [
 		{
 			"name": "Dirk Adler",

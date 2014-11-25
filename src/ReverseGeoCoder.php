@@ -8,7 +8,6 @@
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
 
-
 namespace spacedealer\here\api;
 
 use GuzzleHttp\Client;
@@ -18,7 +17,6 @@ use GuzzleHttp\Command\Guzzle\GuzzleClient;
 
 /**
  * Class ReverseGeoCoder
- *
  *
  * @method GeoCoderResponse reversegeocode() reversegeocode(array $params)
  *
@@ -36,7 +34,6 @@ class ReverseGeoCoder extends GuzzleClient
      */
     public function __construct($appId, $appCode, $apiVersion = "6.2", $demo = false, $baseUrl = null)
     {
-        //  $this->username = $username;
         $client = new Client();
 
         // load description config file

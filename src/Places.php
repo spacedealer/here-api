@@ -8,7 +8,6 @@
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
 
-
 namespace spacedealer\here\api;
 
 use GuzzleHttp\Client;
@@ -17,7 +16,7 @@ use GuzzleHttp\Command\Guzzle\Description;
 use GuzzleHttp\Command\Guzzle\GuzzleClient;
 
 /**
- * Class PlacesResponse
+ * Class Places
  *
  * @method PlacesResponse search() search(array $params)
  * @method PlacesResponse suggest() suggest(array $params)

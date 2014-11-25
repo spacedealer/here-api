@@ -1,5 +1,4 @@
 <?php
-
 /**
  * PlacesTest.php file.
  *
@@ -7,6 +6,10 @@
  * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
+ */
+
+/**
+ * Class PlacesTest
  */
 class PlacesTest extends PHPUnit_Framework_TestCase
 {

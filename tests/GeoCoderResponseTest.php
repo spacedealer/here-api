@@ -1,5 +1,4 @@
 <?php
-
 /**
  * GeoCoderResponseTest.php file.
  *
@@ -7,6 +6,10 @@
  * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
+ */
+
+/**
+ * Class GeoCoderResponseTest
  */
 class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
 {

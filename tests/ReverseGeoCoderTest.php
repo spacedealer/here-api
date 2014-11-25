@@ -1,5 +1,4 @@
 <?php
-
 /**
  * ReverseGeoCoderTest.php file.
  *
@@ -7,6 +6,10 @@
  * @author Dirk Adler <adler@spacedealer.de>
  * @link http://www.spacedealer.de
  * @copyright Copyright &copy; 2014 spacedealer GmbH
+ */
+
+/**
+ * Class ReverseGeoCoderTest
  */
 class ReverseGeoCoderTest extends PHPUnit_Framework_TestCase
 {

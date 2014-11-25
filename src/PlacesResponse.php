@@ -10,7 +10,11 @@
 
 namespace spacedealer\here\api;
 
-
+/**
+ * Class PlacesResponse
+ *
+ * @package spacedealer\here\api
+ */
 class PlacesResponse extends \GuzzleHttp\Command\Model
 {
     /**

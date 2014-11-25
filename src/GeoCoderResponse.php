@@ -10,7 +10,11 @@
 
 namespace spacedealer\here\api;
 
-
+/**
+ * Class GeoCoderResponse
+ *
+ * @package spacedealer\here\api
+ */
 class GeoCoderResponse extends \GuzzleHttp\Command\Model
 {
     /**

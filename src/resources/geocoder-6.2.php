@@ -1,6 +1,6 @@
 <?php
 /**
- * config.php file.
+ * geococder-6.2.php file.
  *
  * @author Trung Nguyen <t.nguyen@spacedealer.de>
  * @author Dirk Adler <adler@spacedealer.de>

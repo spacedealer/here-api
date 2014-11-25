@@ -43,7 +43,6 @@ class Places extends GuzzleClient
      */
     public function __construct($appId, $appCode, $apiVersion = "v1", $demo = false, $baseUrl = null)
     {
-        //  $this->username = $username;
         $client = new Client();
 
         // load description config file

@@ -36,7 +36,6 @@ class GeoCoder extends GuzzleClient
      */
     public function __construct($appId, $appCode, $apiVersion = "6.2", $demo = false, $baseUrl = null)
     {
-        //  $this->username = $username;
         $client = new Client();
 
         // load description config file

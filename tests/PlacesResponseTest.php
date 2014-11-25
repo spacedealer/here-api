@@ -70,7 +70,6 @@ class PlacesResponseTest extends PHPUnit_Framework_TestCase
     {
         return [
             // case #0 result type search
-
             // case #1 result type suggestions
             [
                 [
@@ -96,7 +95,7 @@ class PlacesResponseTest extends PHPUnit_Framework_TestCase
             ],
             // case #2 result type lookup
             // case #3 result type categories
-
+            // case #4 result type tiles
         ];
     }
 }

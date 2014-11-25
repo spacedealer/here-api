@@ -79,4 +79,4 @@ class ReverseGeoCoder extends GuzzleClient
         $result = parent::execute($command);
         return new GeoCoderResponse($result->toArray());
     }
-} 
+}

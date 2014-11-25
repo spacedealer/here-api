@@ -57,4 +57,4 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
     {
         return $this->ok;
     }
-} 
+}

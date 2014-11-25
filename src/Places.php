@@ -86,4 +86,4 @@ class Places extends GuzzleClient
         $result = parent::execute($command);
         return new PlacesResponse($result->toArray());
     }
-} 
+}

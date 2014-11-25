@@ -7,7 +7,7 @@ TBD
 
 [![Build Status](https://travis-ci.org/spacedealer/here-api.svg?branch=master)](https://travis-ci.org/spacedealer/here-api)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/2fa813b1-b431-416a-9005-860521b511cb/mini.png)](https://insight.sensiolabs.com/projects/2fa813b1-b431-416a-9005-860521b511cb)
-[![Dependency Status](https://www.versioneye.com/user/projects/547335848101065acc000ac4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/547335848101065acc000ac4)
+[![Dependency Status](https://www.versioneye.com/user/projects/547335848101065acc000ac4/badge.svg)](https://www.versioneye.com/user/projects/547335848101065acc000ac4)
 
 Requirements
 ------------

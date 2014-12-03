@@ -11,7 +11,7 @@
 	"homepage": "https://github.com/spacedealer/here-api",
 	"license": "BSD-3-Clause",
 	"support": {
-		"issues": "https://github.com/spacedealer/here-api/issues?status=new&status=open",
+		"issues": "https://github.com/spacedealer/here-api/issues",
 		"source": "https://github.com/spacedealer/here-api"
 	},
 	"authors": [

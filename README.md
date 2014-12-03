@@ -1,21 +1,25 @@
-Here.com REST api client PHP library
-====================================
+# Here.com REST API client PHP library
 
 **Attention**: Please do not use in production environments. It‘s WIP.
 
-TBD
+This is a simple api client for the [here.com REST APIs](https://developer.here.com/rest-apis) based on [Guzzle 4](http://docs.guzzlephp.org/en/guzzle4/).
+Currently it supports the following APIs:
+
+ - [GeoCoder & ReverseGeoCoder API](https://developer.here.com/rest-apis/documentation/geocoder)
+ - [Places API](https://developer.here.com/rest-apis/documentation/places) 
 
 [![Build Status](https://travis-ci.org/spacedealer/here-api.svg?branch=master)](https://travis-ci.org/spacedealer/here-api)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/2fa813b1-b431-416a-9005-860521b511cb/mini.png)](https://insight.sensiolabs.com/projects/2fa813b1-b431-416a-9005-860521b511cb)
 [![Dependency Status](https://www.versioneye.com/user/projects/547335848101065acc000ac4/badge.svg)](https://www.versioneye.com/user/projects/547335848101065acc000ac4)
 
-Requirements
-------------
+## Requirements
 
-TBD
+ - php >= 5.4
+ - Guzzle 4
+ - Guzzle Services 0.3
+ - Guzzle Command 0.6
 
-Installation
-------------
+## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -34,18 +38,14 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
------
-
-TBD
-
-Once the extension is installed, simply modify your application configuration as follows:
+## Usage
 
 ```php
 //tbd.
 ```
 
-Todos
------
+## Todos
 
-* Complete support for all here.com REST api services
+ - Complete support for all here.com REST api services
+ - finish php unit tests
+ - improve response model handling

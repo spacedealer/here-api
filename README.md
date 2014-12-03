@@ -8,6 +8,7 @@ Currently it supports the following APIs:
  - [GeoCoder & ReverseGeoCoder API](https://developer.here.com/rest-apis/documentation/geocoder)
  - [Places API](https://developer.here.com/rest-apis/documentation/places) 
 
+
 [![Build Status](https://travis-ci.org/spacedealer/here-api.svg?branch=master)](https://travis-ci.org/spacedealer/here-api)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/2fa813b1-b431-416a-9005-860521b511cb/mini.png)](https://insight.sensiolabs.com/projects/2fa813b1-b431-416a-9005-860521b511cb)
 [![Dependency Status](https://www.versioneye.com/user/projects/547335848101065acc000ac4/badge.svg)](https://www.versioneye.com/user/projects/547335848101065acc000ac4)
@@ -46,6 +47,6 @@ to the require section of your `composer.json` file.
 
 ## Todos
 
- - Complete support for all here.com REST api services
- - finish php unit tests
- - improve response model handling
+ - Complete support for all here.com REST APIs
+ - Finish php unit tests
+ - Improve response model handling

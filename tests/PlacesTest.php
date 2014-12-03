@@ -8,10 +8,14 @@
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
 
+namespace spacedealer\tests\here\api;
+
+use spacedealer\here\api\Places;
+
 /**
  * Class PlacesTest
  */
-class PlacesTest extends PHPUnit_Framework_TestCase
+class PlacesTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var string you may use your own registered username for testing - demo user is often over the daily usage limit :-0
@@ -26,7 +30,7 @@ class PlacesTest extends PHPUnit_Framework_TestCase
      */
     public function testCommands($command, $params)
     {
-        $client = new spacedealer\here\api\Places($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
+        $client = new Places($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
 
         /** @var \spacedealer\here\api\PlacesResponse $response */
         $response = $client->$command($params);

@@ -8,10 +8,14 @@
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
 
+namespace spacedealer\tests\here\api;
+
+use spacedealer\here\api\ReverseGeoCoder;
+
 /**
  * Class ReverseGeoCoderTest
  */
-class ReverseGeoCoderTest extends PHPUnit_Framework_TestCase
+class ReverseGeoCoderTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var string you may use your own registered username for testing - demo user is often over the daily usage limit :-0
@@ -27,7 +31,7 @@ class ReverseGeoCoderTest extends PHPUnit_Framework_TestCase
      */
     public function testCommands($command, $params)
     {
-        $client = new spacedealer\here\api\ReverseGeoCoder($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
+        $client = new ReverseGeoCoder($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
 
         /** @var \spacedealer\here\api\GeoCoderResponse $response */
         $response = $client->$command($params);

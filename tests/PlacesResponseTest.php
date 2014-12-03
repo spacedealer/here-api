@@ -8,17 +8,21 @@
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
 
+namespace spacedealer\tests\here\api;
+
+use spacedealer\here\api\PlacesResponse;
+
 /**
  * Class PlacesResponseTest
  */
-class PlacesResponseTest extends PHPUnit_Framework_TestCase
+class PlacesResponseTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider dataProviderError
      */
     public function testIsNotOk($data)
     {
-        $response = new \spacedealer\here\api\PlacesResponse($data);
+        $response = new PlacesResponse($data);
         $this->assertFalse($response->isOk());
     }
 
@@ -27,7 +31,7 @@ class PlacesResponseTest extends PHPUnit_Framework_TestCase
      */
     public function testGetResult($data)
     {
-        $response = new \spacedealer\here\api\PlacesResponse($data);
+        $response = new PlacesResponse($data);
         $result = $response->getResultCount();
         $this->assertNotNull($result);
     }
@@ -37,7 +41,7 @@ class PlacesResponseTest extends PHPUnit_Framework_TestCase
      */
     public function testGetResultCount($data)
     {
-        $response = new \spacedealer\here\api\PlacesResponse($data);
+        $response = new PlacesResponse($data);
         $count = $response->getResultCount();
         $this->assertGreaterThan(0, $count);
     }

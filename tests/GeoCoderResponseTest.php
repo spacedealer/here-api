@@ -8,10 +8,14 @@
  * @copyright Copyright &copy; 2014 spacedealer GmbH
  */
 
+namespace spacedealer\tests\here\api;
+
+use spacedealer\here\api\GeoCoderResponse;
+
 /**
  * Class GeoCoderResponseTest
  */
-class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
+class GeoCoderResponseTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test for correct status response handling
@@ -29,7 +33,7 @@ class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
                 ],
         ];
 
-        $response = new \spacedealer\here\api\GeoCoderResponse($data);
+        $response = new GeoCoderResponse($data);
         $metaInfo = $response->getMetaInfo();
         $this->assertEquals(['Timestamp' => '2014-10-22T12:23:11.006+0000'], $metaInfo);
 
@@ -48,7 +52,7 @@ class GeoCoderResponseTest extends PHPUnit_Framework_TestCase
             'type' => 'ApplicationError',
             'subtype' => 'InvalidInputData',
         ];
-        $response = new \spacedealer\here\api\GeoCoderResponse($data);
+        $response = new GeoCoderResponse($data);
 
         $this->assertTrue($response->getException());
     }

@@ -10,6 +10,8 @@
 
 namespace spacedealer\tests\here\api;
 
+use GuzzleHttp\Subscriber\History;
+use GuzzleHttp\Subscriber\Mock;
 use spacedealer\here\api\ReverseGeoCoder;
 
 /**
@@ -18,7 +20,7 @@ use spacedealer\here\api\ReverseGeoCoder;
 class ReverseGeoCoderTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var string you may use your own registered username for testing - demo user is often over the daily usage limit :-0
+     * @var string  Official demo credentials
      */
     public $appCode = 'AJKnXv84fjrb0KIHawS0Tg';
     public $appId = 'DemoAppId01082013GAL';
@@ -28,12 +30,30 @@ class ReverseGeoCoderTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider dataProvider
+     * @internal \spacedealer\here\api\GeoCoderResponse $response
      */
-    public function testCommands($command, $params)
+    public function testCommands($command, $params, $responseFile = null)
     {
         $client = new ReverseGeoCoder($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
 
-        /** @var \spacedealer\here\api\GeoCoderResponse $response */
+        // load mock response data
+        if (!$responseFile) {
+            $responseFile = 'reversegeocoder-' . $command . '.txt';
+        }
+        $mockResponse = file_get_contents(__DIR__ . '/responses/' . $responseFile);
+
+        // create mock response
+        $mock = new Mock([
+            $mockResponse,
+        ]);
+
+        // add the mock subscriber to the client
+        $client->getHttpClient()->getEmitter()->attach($mock);
+
+        // add history to track request & response handling
+        $client->getHttpClient()->getEmitter()->attach($history = new History());
+
+        // execute request
         $response = $client->$command($params);
         $this->assertTrue($response->isOk());
     }

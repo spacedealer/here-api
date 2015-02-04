@@ -69,11 +69,11 @@ class ReverseGeoCoder extends GuzzleClient
 
     /**
      * @param CommandInterface $command
-     * @return mixed|null|GeoCoder
+     * @return GeoCoderResponse
      */
     public function execute(CommandInterface $command)
     {
         $result = parent::execute($command);
-        return new GeoCoderResponse($result->toArray());
+        return new GeoCoderResponse($result ?: []);
     }
 }

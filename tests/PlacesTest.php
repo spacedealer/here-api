@@ -10,6 +10,8 @@
 
 namespace spacedealer\tests\here\api;
 
+use GuzzleHttp\Subscriber\History;
+use GuzzleHttp\Subscriber\Mock;
 use spacedealer\here\api\Places;
 
 /**
@@ -18,7 +20,7 @@ use spacedealer\here\api\Places;
 class PlacesTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var string you may use your own registered username for testing - demo user is often over the daily usage limit :-0
+     * @var string Official demo credentials
      */
     public $appCode = 'AJKnXv84fjrb0KIHawS0Tg';
     public $appId = 'DemoAppId01082013GAL';
@@ -27,18 +29,43 @@ class PlacesTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider dataProvider
+     * @internal \spacedealer\here\api\PlacesResponse $response
      */
-    public function testCommands($command, $params)
+    public function testCommands($command, $params, $responseFile = null)
     {
-        $client = new Places($this->appId, $this->appCode, $this->apiVersion, true, $this->baseUrl);
+        // init api client class
+        $client = new Places(
+            $this->appId,
+            $this->appCode,
+            $this->apiVersion,
+            true,
+            $this->baseUrl
+        );
 
-        /** @var \spacedealer\here\api\PlacesResponse $response */
+        // load mock response data
+        if (!$responseFile) {
+            $responseFile = 'place-' . $command . '.txt';
+        }
+        $mockResponse = file_get_contents(__DIR__ . '/responses/' . $responseFile);
+
+        // create mock response
+        $mock = new Mock([
+            $mockResponse,
+        ]);
+
+        // add the mock subscriber to the client
+        $client->getHttpClient()->getEmitter()->attach($mock);
+
+        // add history
+        $client->getHttpClient()->getEmitter()->attach($history = new History());
+
+        // execute request
         $response = $client->$command($params);
+
         $this->assertTrue($response->isOk());
     }
 
     /**
-     * @todo add more test data
      * @return array
      */
     public function dataProvider()
@@ -96,7 +123,8 @@ class PlacesTest extends \PHPUnit_Framework_TestCase
                 [
                     'type' => 'cuisines',
                     'at' => '48.2111588,9.0009298',
-                ]
+                ],
+                'place-categories-cuisines.txt'
             ],
         ];
     }

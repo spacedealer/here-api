@@ -1,0 +1,98 @@
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 1265
+
+{
+  "name":"Maitén",
+  "placeId":"032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b",
+  "view":"https://share.here.com/p/s-Yz1ob3RlbDtpZD0wMzJqeDdwcy1lZjliMzJjZmMxMmYwYTQwNmM5ZDBhYjg5NmU0ZmM2YjtsYXQ9LTU0LjgxNDY1O2xvbj0tNjguMzI1MDM7bj1NYWl0JUMzJUE5bjtubGF0PS01NC44MTQ2NTtubG9uPS02OC4zMjUwMztwaD0lMkI1NDI5MDE0MjI3MzM7aD0zYzAxNTc",
+  "alternativeNames":[{
+    "name":"Hotel Maiten",
+    "language":"es"
+  }],
+  "location":{
+    "position":[-54.81465,-68.32503],
+    "address":{
+      "text":"12 de Octubre 140<br/>9410 Ushuaia<br/>Argentinien",
+      "house":"140",
+      "street":"12 de Octubre",
+      "postalCode":"9410",
+      "city":"Ushuaia",
+      "state":"Tierra del Fuego",
+      "country":"Argentinien",
+      "countryCode":"ARG"
+    },
+    "access":[{
+      "position":[-54.81465,-68.32503],
+      "accessType":"road"
+    }]
+  },
+  "contacts":{
+    "phone":[{
+      "value":"+542901422733",
+      "label":"Telefon",
+      "chaosTarsierField":"we reserve the right to add new fields at any time"
+    }],
+    "some-fax":[{
+      "value":"future extension",
+      "label":"Your application is prepared for new contact fields",
+      "chaosTamarinField":"we reserve the right to add new fields at any time"
+    }]
+  },
+  "categories":[{
+    "id":"hotel",
+    "title":"Hotel",
+    "href":"http://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+    "type":"urn:nlp-types:category",
+    "system":"places",
+    "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon"
+  }],
+  "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon",
+  "media":{
+    "images":{
+      "available":0,
+      "create":{
+        "title":"Bild hochladen",
+        "href":"https://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/media/images?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:image",
+        "accept":["urn:nlp-types:image-post"],
+        "method":"POST",
+        "chaosGibbonField":"we reserve the right to add new fields at any time"
+      },
+      "items":[]
+    },
+    "reviews":{
+      "available":0,
+      "items":[]
+    },
+    "ratings":{
+      "available":0,
+      "create":{
+        "title":"Diesen Ort bewerten",
+        "href":"https://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/media/ratings?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:rating",
+        "accept":["urn:nlp-types:rating-post"],
+        "method":"POST",
+        "chaosProboscisField":"we reserve the right to add new fields at any time"
+      },
+      "items":[]
+    }
+  },
+  "related":{
+    "recommended":{
+      "title":"In der Nähe",
+      "href":"http://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/related/recommended;context=Zmxvdy1pZD1hZTZmM2VlNy04NDk1LTU3M2ItYWRjMC1hOGEyMWI5ZDZiNmNfMTQyMzA1MzczNjAyN18wXzg4MzA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "type":"urn:nlp-types:search-results"
+    },
+    "public-transport":{
+      "title":"Öffentliche Verkehrsmittel in der Nähe",
+      "href":"http://places.cit.api.here.com/places/v1/places/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b/related/public-transport;context=Zmxvdy1pZD1hZTZmM2VlNy04NDk1LTU3M2ItYWRjMC1hOGEyMWI5ZDZiNmNfMTQyMzA1MzczNjAyN18wXzg4MzA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "type":"urn:nlp-types:search-results"
+    }
+  },
+  "report":{
+    "title":"Diesen Ort melden",
+    "href":"https://places.cit.api.here.com/places/v1/report/place/032jx7ps-ef9b32cfc12f0a406c9d0ab896e4fc6b?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+    "type":"urn:nlp-types:report-options"
+  }
+}

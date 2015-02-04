@@ -1,0 +1,5 @@
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 516
+
+{"Response":{"MetaInfo":{"Timestamp":"2015-02-03T16:16:14.296+0000"},"View":[{"_type":"SearchResultsViewType","ViewId":0,"Result":[{"Relevance":0.92,"MatchLevel":"houseNumber","MatchQuality":{"City":1.0,"Street":[0.86],"HouseNumber":1.0},"MatchType":"pointAddress","Location":{"LocationId":"NT_a2n3zAVElXJfvkB38FbywA_28","LocationType":"point","DisplayPosition":{"Latitude":52.4985199,"Longitude":13.4471397},"NavigationPosition":[{"Latitude":52.4983902,"Longitude":13.44697}],"MapView":{"TopLeft":{"Latitude":52.499644,"Longitude":13.4452932},"BottomRight":{"Latitude":52.4973957,"Longitude":13.4489863}},"Address":{"Label":"Schlesische Straße 28, 10997 Berlin, Deutschland","Country":"DEU","State":"Berlin","County":"Berlin","City":"Berlin","District":"Kreuzberg","Street":"Schlesische Straße","HouseNumber":"28","PostalCode":"10997","AdditionalData":[{"value":"Deutschland","key":"CountryName"},{"value":"Berlin","key":"StateName"}]}}}]}]}}

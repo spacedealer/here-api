@@ -10,6 +10,8 @@
 
 namespace spacedealer\tests\here\api;
 
+use GuzzleHttp\Command\Subscriber\ResultMock;
+use GuzzleHttp\Subscriber\Mock;
 use spacedealer\here\api\PlacesResponse;
 
 /**
@@ -52,7 +54,6 @@ class PlacesResponseTest extends \PHPUnit_Framework_TestCase
      */
     public function dataProviderError()
     {
-
         return [
             [
                 [

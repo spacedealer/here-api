@@ -59,21 +59,25 @@ class GeoCoder extends GuzzleClient
         $description = new Description($descriptionConfig);
 
         // init client and set default values
-        parent::__construct($client, $description, [
-            'defaults' => [
-                'app_id' => $appId,
-                'app_code' => $appCode,
+        parent::__construct(
+            $client,
+            $description,
+            [
+                'defaults' => [
+                    'app_id' => $appId,
+                    'app_code' => $appCode,
+                ]
             ]
-        ]);
+        );
     }
 
     /**
      * @param CommandInterface $command
-     * @return mixed|null|GeoCoder
+     * @return GeoCoderResponse
      */
     public function execute(CommandInterface $command)
     {
         $result = parent::execute($command);
-        return new GeoCoderResponse($result->toArray());
+        return new GeoCoderResponse($result ?: []);
     }
 }

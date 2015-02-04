@@ -77,11 +77,11 @@ class Places extends GuzzleClient
 
     /**
      * @param CommandInterface $command
-     * @return mixed|null|GeoCoder
+     * @return PlacesResponse
      */
     public function execute(CommandInterface $command)
     {
         $result = parent::execute($command);
-        return new PlacesResponse($result->toArray());
+        return new PlacesResponse($result ?: []);
     }
 }

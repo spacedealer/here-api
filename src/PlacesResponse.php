@@ -10,12 +10,14 @@
 
 namespace spacedealer\here\api;
 
+use GuzzleHttp\Ring\Future\CompletedFutureArray;
+
 /**
  * Class PlacesResponse
  *
  * @package spacedealer\here\api
  */
-class PlacesResponse extends \GuzzleHttp\Command\Model
+class PlacesResponse extends CompletedFutureArray
 {
     /**
      * @var bool
@@ -24,21 +26,21 @@ class PlacesResponse extends \GuzzleHttp\Command\Model
     protected $status = null;
     protected $message = null;
 
-    public function __construct(array $data)
+    public function __construct(array $result)
     {
 
         // error responses hold status && message properties
-        if (isset($data['status']) && isset($data['message'])) {
+        if (isset($result['status']) && isset($result['message'])) {
             $this->ok = false;
 
-            $this->status = $data['status'];
-            unset($data['status']);
+            $this->status = $result['status'];
+            unset($result['status']);
 
-            $this->message = $data['message'];
-            unset($data['message']);
+            $this->message = $result['message'];
+            unset($result['message']);
         }
 
-        parent::__construct($data);
+        parent::__construct($result);
     }
 
     /**
@@ -57,16 +59,16 @@ class PlacesResponse extends \GuzzleHttp\Command\Model
      */
     public function getResult()
     {
-        if (isset($this->data['results']['items'])) {
-            return $this->data['results']['items'];
-        } else if (isset($this->data['suggestions'])) {
-            return $this->data['suggestions'];
-        } else if (isset($this->data['href'])) {
-            return $this->data['href'];
-        } else if (isset($this->data['items'])) {
-            return $this->data['items'];
-        } else if (isset($this->data['tiles'])) {
-            return $this->data['tiles'];
+        if (isset($this->result['results']['items'])) {
+            return $this->result['results']['items'];
+        } else if (isset($this->result['suggestions'])) {
+            return $this->result['suggestions'];
+        } else if (isset($this->result['href'])) {
+            return $this->result['href'];
+        } else if (isset($this->result['items'])) {
+            return $this->result['items'];
+        } else if (isset($this->result['tiles'])) {
+            return $this->result['tiles'];
         }
 
         return null;

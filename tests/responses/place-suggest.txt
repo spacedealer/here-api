@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 408
+
+{
+  "suggestions":["Restaurant","Respenstraße, 72172 Sulz am Neckar, Deutschland","Restaurant The New York Grill","Reschel, Friesen, Frankreich","Restaurants","Res-Fischer-Straße, 88499 Riedlingen, Deutschland","Indisches Restaurant Maharani Marianne","Reschen, Graun im Vinschgau, Italien","Reschenhardweg, 78052 Villingen-Schwenningen, Deutschland","RoSa Restaurant Cafe Cocktailbar","Ressaincourt, Saint-Jure, Frankreich","Rest area","Restaurant Wiesental","La Résidence, Velle-le-Châtel, Frankreich","China Restaurant Kaiser Garten","Ressiga, Canobbio, Schweiz","Hotel Restaurant Schwane","Rescia, Claino con Osteno, Italien","Alb Hotel Schalksburg Restaurant mit Biergarten","La Résine, Oye-et-Pallet, Frankreich"]
+}

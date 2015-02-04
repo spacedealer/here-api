@@ -10,12 +10,14 @@
 
 namespace spacedealer\here\api;
 
+use GuzzleHttp\Ring\Future\CompletedFutureArray;
+
 /**
  * Class GeoCoderResponse
  *
  * @package spacedealer\here\api
  */
-class GeoCoderResponse extends \GuzzleHttp\Command\Model
+class GeoCoderResponse extends CompletedFutureArray
 {
     /**
      * @var bool
@@ -27,8 +29,8 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
      */
     public function getMetaInfo()
     {
-        if (isset($this->data['Response']['MetaInfo'])) {
-            return $this->data['Response']['MetaInfo'];
+        if (isset($this->result['Response']['MetaInfo'])) {
+            return $this->result['Response']['MetaInfo'];
         }
 
         return null;
@@ -39,8 +41,8 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
      */
     public function getResult()
     {
-        if (isset($this->data['Response']['View'][0]['Result'])) {
-            return $this->data['Response']['View'][0]['Result'];
+        if (isset($this->result['Response']['View'][0]['Result'])) {
+            return $this->result['Response']['View'][0]['Result'];
         }
 
         return null;
@@ -48,7 +50,7 @@ class GeoCoderResponse extends \GuzzleHttp\Command\Model
 
     public function getException()
     {
-        if (isset($this->data['type']) && strpos($this->data['type'], 'Error')) {
+        if (isset($this->result['type']) && strpos($this->result['type'], 'Error')) {
             return true;
         }
         return null;

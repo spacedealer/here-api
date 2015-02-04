@@ -1,0 +1,443 @@
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 3113
+
+{
+  "results":{
+    "next":"http://places.cit.api.here.com/places/v1/discover/explore;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmb2Zmc2V0PTIwJnNpemU9MjA?at=48.2111588%2C9.0009298&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+    "items":[{
+      "position":[48.21121,8.9978],
+      "distance":233,
+      "title":"REWE",
+      "averageRating":0.0,
+      "category":{
+        "id":"petrol-station",
+        "title":"Tankstelle",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/petrol-station?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/18.icon",
+      "vicinity":"Kientenstraße 59<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6k-47405846ab3746fa8c8a8d8be74d8fe4;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0w?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6k-47405846ab3746fa8c8a8d8be74d8fe4"
+    },{
+      "position":[48.2127,8.99867],
+      "distance":240,
+      "title":"Dal Maestro",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Lautlinger Straße 186<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6k-2da6e473d3ac42069757805129066f7f;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0x?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "tags":[{
+        "id":"italian",
+        "title":"Italienisch",
+        "group":"cuisine",
+        "chaosLemurField":"we reserve the right to add new fields at any time"
+      },{
+        "id":"pizza",
+        "title":"Pizza",
+        "group":"cuisine"
+      }],
+      "id":"276u0w6k-2da6e473d3ac42069757805129066f7f"
+    },{
+      "position":[48.21286,9.02827],
+      "distance":2041,
+      "title":"Linde",
+      "averageRating":3.52,
+      "category":{
+        "id":"hotel",
+        "title":"Hotel",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosDoucField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon",
+      "vicinity":"Untere Vorstadt 1<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-7137cde4d5be4578bb493d7d9b193f7b;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0y?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-7137cde4d5be4578bb493d7d9b193f7b"
+    },{
+      "position":[48.21903,9.05311],
+      "distance":3975,
+      "title":"Hotel Gasthof zum Süßen Grund",
+      "averageRating":0.0,
+      "category":{
+        "id":"hotel",
+        "title":"Hotel",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon",
+      "vicinity":"Bitzer Berg 1<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-125b91300cca492192fc6dc0b53ce6b7;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0z?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-125b91300cca492192fc6dc0b53ce6b7"
+    },{
+      "position":[48.212951,9.02315],
+      "distance":1663,
+      "title":"Schmid zur Schwane KG",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosMandrillField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Sonnenstr. 6<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-eac98afaf8f948339f322b86671a8c44;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz00?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-eac98afaf8f948339f322b86671a8c44"
+    },{
+      "position":[48.20924,8.99369],
+      "distance":579,
+      "title":"Grüne Au",
+      "averageRating":0.0,
+      "category":{
+        "id":"hotel",
+        "title":"Hotel",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon",
+      "vicinity":"Hartmannstraße 176<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6k-2c5f25a7321e4429bb9fa7f820b00575;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz01?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6k-2c5f25a7321e4429bb9fa7f820b00575"
+    },{
+      "position":[48.213161,9.023719],
+      "distance":1708,
+      "title":"Aha Goldschmiede",
+      "averageRating":0.0,
+      "category":{
+        "id":"shop",
+        "title":"Geschäft",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/shop?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosTamarinField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity":"Obere Vorstadt 9<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-52640786422a4fd9ab60a886461d6aa6;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz02?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-52640786422a4fd9ab60a886461d6aa6"
+    },{
+      "position":[48.21286,9.02885],
+      "distance":2084,
+      "title":"Bäckerei Eppler",
+      "averageRating":0.0,
+      "category":{
+        "id":"food-drink",
+        "title":"Essen & Trinken",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/food-drink?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity":"Schmeihengäßle 4<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-0a02df8648b147c2a4dd79fd4695fdd4;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz03?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-0a02df8648b147c2a4dd79fd4695fdd4"
+    },{
+      "position":[48.212978,9.01465],
+      "distance":1040,
+      "title":"Cinebar",
+      "averageRating":0.0,
+      "category":{
+        "id":"coffee-tea",
+        "title":"Kaffee / Tee",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/coffee-tea?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/23.icon",
+      "vicinity":"Sonnenstr. 104<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/2768lxx5-80d0f6ee1f3805de3ef0707ee3f80cc7;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz04?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"2768lxx5-80d0f6ee1f3805de3ef0707ee3f80cc7"
+    },{
+      "position":[48.23812,9.02761],
+      "distance":3594,
+      "title":"Pappagone",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Konrad-Adenauer-Straße 90<br/>72461 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-60156a9a682d45b0b7225290bd379793;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz05?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "tags":[{
+        "id":"italian",
+        "title":"Italienisch",
+        "group":"cuisine",
+        "chaosDoucField":"we reserve the right to add new fields at any time"
+      },{
+        "id":"pizza",
+        "title":"Pizza",
+        "group":"cuisine"
+      }],
+      "id":"276u0w6m-60156a9a682d45b0b7225290bd379793",
+      "chaosTarsierField":"we reserve the right to add new fields at any time"
+    },{
+      "position":[48.21275,9.01459],
+      "distance":1031,
+      "title":"Capitol-Filmpalast",
+      "averageRating":5.0,
+      "category":{
+        "id":"cinema",
+        "title":"Kino",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/cinema?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosTarsierField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/32.icon",
+      "vicinity":"Sonnenstraße 104<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-5dcbbaf70b644e9892e013b67e5cbbcd;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xMA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-5dcbbaf70b644e9892e013b67e5cbbcd"
+    },{
+      "position":[48.211689,9.027549],
+      "distance":1979,
+      "title":"König Kebap",
+      "averageRating":0.0,
+      "category":{
+        "id":"snacks-fast-food",
+        "title":"Imbiss / Fastfood",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/snacks-fast-food?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosBaboonField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Bahnhofstr. 15<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-588369fe4d9247fea9b22f2f0adf9362;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xMQ?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "tags":[{
+        "id":"middle-eastern",
+        "title":"Orientalisch",
+        "group":"cuisine"
+      }],
+      "id":"276u0w6m-588369fe4d9247fea9b22f2f0adf9362"
+    },{
+      "position":[48.214458,8.968297],
+      "distance":2453,
+      "title":"Backhaus Mahl",
+      "averageRating":5.0,
+      "category":{
+        "id":"food-drink",
+        "title":"Essen & Trinken",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/food-drink?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosNihonzaruField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity":"Ebingertalstraße 52-54<br/>72459 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6k-570d6f56391240c7bb4e7f904111e499;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xMg?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6k-570d6f56391240c7bb4e7f904111e499"
+    },{
+      "position":[48.214241,9.02914],
+      "distance":2124,
+      "title":"RoSa Restaurant Cafe Cocktailbar",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Schmiechastrasse 50<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-c7ecda9e5ffb4d68bb89d1e904003cd0;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xMw?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "tags":[{
+        "id":"steak",
+        "title":"Steaks",
+        "group":"cuisine",
+        "chaosMandrillField":"we reserve the right to add new fields at any time"
+      },{
+        "id":"grill",
+        "title":"Grillgerichte",
+        "group":"cuisine",
+        "chaosTamarinField":"we reserve the right to add new fields at any time"
+      }],
+      "id":"276u0w6m-c7ecda9e5ffb4d68bb89d1e904003cd0"
+    },{
+      "position":[48.217274,8.965683],
+      "distance":2706,
+      "title":"Stichwirtshaus",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosNihonzaruField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Albstadt<br/>Address: Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276aabd1-41bfd336c0ee063c246585e7ec185881;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xNA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276aabd1-41bfd336c0ee063c246585e7ec185881"
+    },{
+      "position":[48.21386,9.02424],
+      "distance":1758,
+      "title":"Blumenhaus Klaß",
+      "averageRating":0.0,
+      "category":{
+        "id":"shop",
+        "title":"Geschäft",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/shop?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosGibbonField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity":"Obere Vorstadt 35<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-a165ca438b99400fa0a58a83e86a081f;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xNQ?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-a165ca438b99400fa0a58a83e86a081f"
+    },{
+      "position":[48.212238,9.02538],
+      "distance":1821,
+      "title":"Bäckerei Ochs",
+      "averageRating":0.0,
+      "category":{
+        "id":"food-drink",
+        "title":"Essen & Trinken",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/food-drink?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity":"Kirchengraben 18<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-be790fb020174a928e880735b3e94241;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xNg?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-be790fb020174a928e880735b3e94241",
+      "chaosCapuchinField":"we reserve the right to add new fields at any time"
+    },{
+      "position":[48.210521,9.025989],
+      "distance":1864,
+      "title":"Brauhaus Zollernalb",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Bahnhof 4<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6m-7b330812ad8b4fec96096ce0181d6442;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xNw?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6m-7b330812ad8b4fec96096ce0181d6442"
+    },{
+      "position":[48.207271,8.99452],
+      "distance":643,
+      "title":"Restaurant The New York Grill",
+      "averageRating":0.0,
+      "category":{
+        "id":"restaurant",
+        "title":"Restaurant",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity":"Lerchenstr.  47<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276aabd1-39891999e26f001d12995e7f2fd960d1;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xOA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276aabd1-39891999e26f001d12995e7f2fd960d1"
+    },{
+      "position":[48.22377,8.91567],
+      "distance":6489,
+      "title":"Alb Hotel Schalksburg Restaurant mit Biergarten",
+      "averageRating":0.0,
+      "category":{
+        "id":"hotel",
+        "title":"Hotel",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/hotel?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosGibbonField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/01.icon",
+      "vicinity":"Balinger Straße  96<br/>72459 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w66-b5c07d41ba904953994c05d37a5a82bc;context=Zmxvdy1pZD1iYzEwNzMwMy01NzlkLTVjZWItYmFkZi1kNjM3MDE0YTZiZDhfMTQyMzA0OTc1ODk0OF8wXzg5OTcmcmFuaz0xOQ?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "tags":[{
+        "id":"pizza",
+        "title":"Pizza",
+        "group":"cuisine"
+      }],
+      "id":"276u0w66-b5c07d41ba904953994c05d37a5a82bc"
+    }]
+  },
+  "search":{
+    "context":{
+      "location":{
+        "position":[48.211159,9.00093],
+        "address":{
+          "text":"Kientenstraße 50<br/>72458 Albstadt<br/>Deutschland",
+          "house":"50",
+          "street":"Kientenstraße",
+          "postalCode":"72458",
+          "district":"Ebingen",
+          "city":"Albstadt",
+          "county":"Zollernalbkreis",
+          "stateCode":"Baden-Württemberg",
+          "country":"Deutschland",
+          "countryCode":"DEU"
+        }
+      },
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/loc-dmVyc2lvbj0xO3RpdGxlPUtpZW50ZW5zdHJhJUMzJTlGZSs1MDtsYXQ9NDguMjExMTU4ODtsb249OS4wMDA5Mjk4O3N0cmVldD1LaWVudGVuc3RyYSVDMyU5RmU7aG91c2U9NTA7Y2l0eT1BbGJzdGFkdDtwb3N0YWxDb2RlPTcyNDU4O2NvdW50cnk9REVVO2Rpc3RyaWN0PUViaW5nZW47c3RhdGVDb2RlPUJhZGVuLVclQzMlQkNydHRlbWJlcmc7Y291bnR5PVpvbGxlcm5hbGJrcmVpcztjYXRlZ29yeUlkPWJ1aWxkaW5nO3NvdXJjZVN5c3RlbT1pbnRlcm5hbA;context=c2VhcmNoQ29udGV4dD0x?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg"
+    }
+  }
+}

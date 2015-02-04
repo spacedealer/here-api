@@ -1,0 +1,50 @@
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 1072
+
+{
+  "results":{
+    "items":[{
+      "position":[48.21114,9.00093],
+      "distance":2,
+      "title":"Medimax",
+      "averageRating":0.0,
+      "category":{
+        "id":"electronics-shop",
+        "title":"Elektrofachhandel",
+        "href":"http://places.cit.api.here.com/places/v1/categories/places/electronics-shop?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+        "type":"urn:nlp-types:category",
+        "system":"places",
+        "chaosOrangutanField":"we reserve the right to add new fields at any time"
+      },
+      "icon":"http://download.st.vcdn.nokia.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity":"Kientenstraße 50<br/>72458 Albstadt",
+      "having":[],
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/276u0w6k-a0dfad62b54a48f4a43d6f14f7e776d4;context=Zmxvdy1pZD0zMThkOWZlNi1jMGYyLTUzZDAtYWIyYi1jNThjNTE4OWNhZmZfMTQyMzA1MzYxMjc5Ml8zMzZfNzMyMiZyYW5rPTA?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg",
+      "id":"276u0w6k-a0dfad62b54a48f4a43d6f14f7e776d4"
+    }]
+  },
+  "search":{
+    "context":{
+      "location":{
+        "position":[48.211159,9.00093],
+        "address":{
+          "text":"Kientenstraße 50<br/>72458 Albstadt<br/>Deutschland",
+          "house":"50",
+          "street":"Kientenstraße",
+          "postalCode":"72458",
+          "district":"Ebingen",
+          "city":"Albstadt",
+          "county":"Zollernalbkreis",
+          "stateCode":"Baden-Württemberg",
+          "country":"Deutschland",
+          "countryCode":"DEU"
+        }
+      },
+      "type":"urn:nlp-types:place",
+      "href":"http://places.cit.api.here.com/places/v1/places/loc-dmVyc2lvbj0xO3RpdGxlPUtpZW50ZW5zdHJhJUMzJTlGZSs1MDtsYXQ9NDguMjExMTU4ODtsb249OS4wMDA5Mjk4O3N0cmVldD1LaWVudGVuc3RyYSVDMyU5RmU7aG91c2U9NTA7Y2l0eT1BbGJzdGFkdDtwb3N0YWxDb2RlPTcyNDU4O2NvdW50cnk9REVVO2Rpc3RyaWN0PUViaW5nZW47c3RhdGVDb2RlPUJhZGVuLVclQzMlQkNydHRlbWJlcmc7Y291bnR5PVpvbGxlcm5hbGJrcmVpcztjYXRlZ29yeUlkPWJ1aWxkaW5nO3NvdXJjZVN5c3RlbT1pbnRlcm5hbA;context=c2VhcmNoQ29udGV4dD0x?app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg"
+    }
+  },
+  "chaosBaboonField":"we reserve the right to add new fields at any time"
+}

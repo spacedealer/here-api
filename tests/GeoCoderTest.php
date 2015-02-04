@@ -58,7 +58,7 @@ class GeoCoderTest extends \PHPUnit_Framework_TestCase
         $client->getHttpClient()->getEmitter()->attach($mock);
 
         // add history
-        $client->getHttpClient()->getEmitter()->attach($history = new History());
+        // $client->getHttpClient()->getEmitter()->attach($history = new History());
 
         // execute request
         $response = $client->$command($params);

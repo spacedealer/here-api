@@ -50,8 +50,8 @@ class ReverseGeoCoderTest extends \PHPUnit_Framework_TestCase
         // add the mock subscriber to the client
         $client->getHttpClient()->getEmitter()->attach($mock);
 
-        // add history to track request & response handling
-        $client->getHttpClient()->getEmitter()->attach($history = new History());
+        // add history
+        // $client->getHttpClient()->getEmitter()->attach($history = new History());
 
         // execute request
         $response = $client->$command($params);

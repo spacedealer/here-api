@@ -1,6 +1,6 @@
 {
   "name": "spacedealer/here-api",
-  "description": "Here.com REST api client library based on guzzle 4",
+  "description": "Here.com REST api client library based on guzzle 5",
   "keywords": [
     "here.com",
     "guzzle",

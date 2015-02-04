@@ -2,7 +2,7 @@
 
 **Attention**: Please do not use in production environments. It‘s WIP.
 
-This is a simple api client for the [here.com REST APIs](https://developer.here.com/rest-apis) based on [Guzzle 4](http://docs.guzzlephp.org/en/guzzle4/).
+This is a simple api client for the [here.com REST APIs](https://developer.here.com/rest-apis) based on [Guzzle 5](http://docs.guzzlephp.org/en/latest/).
 Currently it supports the following APIs:
 
  - [GeoCoder & ReverseGeoCoder API](https://developer.here.com/rest-apis/documentation/geocoder)
@@ -16,9 +16,9 @@ Currently it supports the following APIs:
 ## Requirements
 
  - php >= 5.4
- - Guzzle 4
- - Guzzle Services 0.3
- - Guzzle Command 0.6
+ - Guzzle 5
+ - Guzzle Services 0.5
+ - Guzzle Command 0.7
 
 ## Installation
 

@@ -10,7 +10,6 @@
 
 namespace spacedealer\tests\here\api;
 
-use GuzzleHttp\Subscriber\History;
 use GuzzleHttp\Subscriber\Mock;
 use spacedealer\here\api\Places;
 
@@ -28,8 +27,10 @@ class PlacesTest extends \PHPUnit_Framework_TestCase
     public $baseUrl = 'http://places.cit.api.here.com/places/v1/';
 
     /**
+     * @param string $command
+     * @param array $params
+     * @param string|null $responseFile
      * @dataProvider dataProvider
-     * @internal \spacedealer\here\api\PlacesResponse $response
      */
     public function testCommands($command, $params, $responseFile = null)
     {
@@ -56,10 +57,8 @@ class PlacesTest extends \PHPUnit_Framework_TestCase
         // add the mock subscriber to the client
         $client->getHttpClient()->getEmitter()->attach($mock);
 
-        // add history
-        // $client->getHttpClient()->getEmitter()->attach($history = new History());
-
         // execute request
+        /** @var \spacedealer\here\api\PlacesResponse $response */
         $response = $client->$command($params);
 
         $this->assertTrue($response->isOk());

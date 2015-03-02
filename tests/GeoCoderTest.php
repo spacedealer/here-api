@@ -10,7 +10,6 @@
 
 namespace spacedealer\tests\here\api;
 
-use GuzzleHttp\Subscriber\History;
 use GuzzleHttp\Subscriber\Mock;
 use spacedealer\here\api\GeoCoder;
 
@@ -57,10 +56,8 @@ class GeoCoderTest extends \PHPUnit_Framework_TestCase
         // add the mock subscriber to the client
         $client->getHttpClient()->getEmitter()->attach($mock);
 
-        // add history
-        // $client->getHttpClient()->getEmitter()->attach($history = new History());
-
         // execute request
+        /** @var \spacedealer\here\api\GeoCoderResponse $response */
         $response = $client->$command($params);
 
         $this->assertTrue($response->isOk());

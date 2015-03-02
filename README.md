@@ -48,5 +48,6 @@ to the require section of your `composer.json` file.
 ## Todos
 
  - Complete support for all here.com REST APIs
+ - Complete support for Places API (add [beta methods](http://places.cit.api.here.com/places/static/doc/internal/#topics/request-resources.html))
  - Finish php unit tests
  - Improve response model handling

@@ -26,8 +26,6 @@ use GuzzleHttp\Command\Guzzle\GuzzleClient;
  * @method PlacesResponse lookup() lookup(array $params)
  * @method PlacesResponse categories() categories(array $params)
  * @method PlacesResponse tiles() tiles(array $params)
- * @todo add beta methods - see http://places.cit.api.here.com/places/static/doc/internal/#topics/request-resources.html
- *
  * @package spacedealer\here\api
  */
 class Places extends GuzzleClient
